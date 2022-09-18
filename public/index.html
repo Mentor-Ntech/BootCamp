@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techarena</title>
+  <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+  
+  <!---Swiper Css------>
+  <link rel="stylesheet" href="css/cohort.css">
+
+  <link rel="icon" href="/img/cohorts/techimages.png">
+  <link rel="apple-touch-icon" href="/img/cohorts/techimages.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/queries.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">
+      <img class="logo" alt="techArena logo" src="/img/cohorts/techimages.png" />
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#about">About</a></li>
+        <li><a class="main-nav-link" href="#contact">Contact</a></li>
+        <li>
+          <a class="main-nav-link" href="#cohorts">Cohort</a>
+        </li>
+        <li><a class="main-nav-link" href="#stack">stack</a></li>
+        <li><a class="main-nav-link" href="#FAQ">FAQ</a></li>
+        <li><a class="main-nav-link nav-cta" href="#applyNow">APPLY NOW</a></li>
+      </ul>
+    </nav>
+    
+    <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="heroTextBox">
+          <h1 class="headingPrimary marginBottomSm">
+            BETTER LEARNING FUTURE WITH US
+
+          </h1>
+
+          <p class="heroDescription">
+            Get the skills and exprience you need to become a Software
+            engineer,in today's global market
+          </p>
+
+          <a href="#contact" class="btn btnFull  marginRightsm">Get started</a>
+          <a href="#FAQ" class="btn btnOutline">learn more &darr;</a>
+
+
+        </div>
+        <div class="heroImgBox">
+          <picture>
+            <source srcset="/img/hero-minbest1.png" type="image/png">
+            <source srcset="/img/hero-web.webp" type="image/webp">
+          </picture>
+
+          <img class="heroImage" src="/img/cohorts/boss.JPG" alt="">
+
+        </div>
+      </div>
+    </section>
+    <section class="sectionAboutUs" id="About">
+      <h1>About Us </h1>
+      <div class="containerBox">
+        <div class="textBox">
+          <h2 class="headerText">
+            What We Are
+          </h2>
+          <p class="aboutText" id="about">
+            We are passionate about building the people that will build
+            the companies that will build Africa. We are problem solver,
+            technologists and optimist of a better future for Africal and
+            the world at large. We bring to be life by identifying talented
+            minds, guide them through innovation traning, deploying them
+            effectively and collaboration with others to build sustainable
+            solutions, for the society
+          </p>
+        </div>
+      </div>
+      <div class="aboutBoard">
+        <div class="board">
+          <h2>Board</h2>
+        </div>
+        <div class="aboutBcontent">
+          <img src="/img/cohorts/aliu1.PNG" alt="picture" class="about-img">
+          <h3 class="names">Musa Aliu</h2>
+            <p class="aboutDescrip">CEO</p>
+            <span class="info">Celo lead Africa</span>
+        </div>
+        <div class="aboutBcontent">
+          <img src="/img/cohorts/man.jpg" alt="picture" class="about-img">
+          <h3 class="names">Abidoye Azeez Asiwaju</h2>
+            <p class="aboutDescript">Tutor</p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" id>
+      <div class="container">
+          <aside>
+              <h4>Get in touch</h4>
+              <p>we love to hear from you</p>
+              <article>
+                  <span class="icon"><i class="uil uil-envelop"></i></span>
+                  <div class="details">
+                      <h5>Chat with us</h5>
+                      <small>send us an email and we'll respond shortly</small>
+                      <p>info@techArena.com</p>
+                      <p>Obasanjo ota ogun state</p>
+                  </div>
+              </article>
+              <article>
+                  <span class="icon"><i class="uil uil-map-marker"></i></span>
+                  <div class="details">
+                      <h5>Office</h5>
+                      <small>Come say hello at  our office HQ.</small>
+                      <p>63 eje jesu</p>
+                      <p>Obasanjo ota ogun state</p>
+                  </div>
+              </article>
+              <article>
+                  <span class="icon"><i class="uil uil-phone"></i></span>
+                  <div class="details">
+                      <h5>Phone</h5>
+                      <small>Mon-Fri 9am- 5pm.</small>
+                      <p>+(234) 80-630-190-63</p>
+                  </div>
+              </article>
+          </aside>
+          <form action="https://formspree.io/f/moqbeprd" method="POST">
+              <input type="text" name="Name" placeholder="john" required>
+              <input type="email" name="Email Address" placeholder="i@company.com" required>
+              <input type="number" name="Phone Number" placeholder="Phone Number" required>
+              <textarea name="message" placeholder="Messages" required></textarea>
+
+              <button type="submit">Send</button>
+          </form>
+      </div>
+  </section>
+    
+    <section class="sectionCohorts" id="cohorts">
+      <h1>Cohorts</h1>
+      <div class="cohorts">
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="/img/cohorts/naheem.JPG" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Naheem Oloyede</h2>
+                  <p class="description">It was a very interesting program, and it </br>
+                    is a privileg to be part of it</p>
+
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="/img/cohorts/khaddyb.JPG" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Musa Khadija</h2>
+                  <p class="description">I commend the organizer for being very conscientious and showing </br>
+                    excellent and care</p>
+
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="/img/cohorts/kenny.JPG" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Abubakar Kehinde</h2>
+                  <p class="description">it was a very stimulating program and </br>brilliantly taught</p>
+
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="/img/cohorts/saheed.jpeg" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Adam Saheed</h2>
+                  <p class="description">Overall very interesting and useful program-exercise </br>
+                   consolidated the learning</p>
+
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="/img/cohorts/shola.jpg" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Adeshola Tajudeen</h2>
+                  <p class="description">The course has helped provide a starting point</br>
+                   for understanding programming</p>
+
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="/img/cohorts/solihu.jpeg" alt="" class="card-img">
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Soliu Bolajoko</h2>
+                  <p class="description">The journey of 8month full of workwith a great opportunity which i </br>
+                    obtain at TechArena bootcamp</p>
+
+                  <button class="button">View More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next swiper-naBtn"></div>
+          <div class="swiper-button-prev swiper-naBtn"></div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="sectionStack" id="stack">
+    <div class="heading">
+      <span>Our stack</span>
+      <h2>We offer full stack</h2>
+    </div>
+    <div class="stack-container">
+      <div class="box">
+        <div class="box-img">
+          <img src="/img/cohorts/Html.png" alt="">
+        </div>
+        <h2>HTML</h2>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="/img/cohorts/css.png" alt="">
+        </div>
+        <h2>CSS</h2>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="/img/cohorts/js.png" alt="">
+        </div>
+        <h2>JavaScript</h2>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="/img/cohorts/react.png" alt="">
+        </div>
+        <h2>React</h2>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="/img/cohorts/nodejs.png" alt="">
+        </div>
+        <h2>Nodejs</h2>
+      </div>
+    </div>
+
+    </section>
+
+    <section class="FAQ" id="FAQ">
+      <h1>FAQ</h1>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            What is Web Development?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Web Development broadly refers to the tasks associated with developing functional websites and
+              applications for the Internet. The web development process includes web design, web content development,
+              client-side/server-side scripting and network security configuration, among other tasks.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            What is HTML?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything
+              that can be viewed in a web browser.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            What are some basic technical skills of a Front-End developer?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <ul style="padding-left: 1rem;">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Frameworks (CSS and JavaScript frameworks)</li>
+                <li>Responsive Design</li>
+                <li>Version Control/Git</li>
+                <li>Testing/Debugging</li>
+                <li>Browser Developer Tools</li>
+                <li>Web Performance</li>
+                <li>SEO (Search Engine Optimization)</li>
+                <!-- <li>CSS Preprocessing</li> -->
+                <li>Command Line</li>
+                <li>CMS (Content Management System)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            What is HTTP?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this
+              protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers
+              should take in response to various commands.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            What is CORS?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images,
+              stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from
+              which the resource originated.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectionContact" id="applyNow">
+      <div class="containerKK">
+        <h1 class="form-title">Registration</h1>
+        <form action="/apply" method="POST">
+          <div class="main-user-info">
+            <div class="user-input-box">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Full Name" />
+            </div>
+            <div class="user-input-box">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Username" />
+            </div>
+            <div class="user-input-box">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Email" />
+            </div>
+            <div class="user-input-box">
+              <label for="phone Number">Phone Number</label>
+              <input type="text" id="phone Number" name="phone Number" placeholder="Phone Number" />
+            </div>
+            <div class="user-input-box">
+              <label for="password">Password</label>
+              <input type="text" id="password" name="password" placeholder="Password" />
+            </div>
+            <div class="user-input-box">
+              <label for="confirm Password">Confirm Password</label>
+              <input type="text" id="confirm Password" name="confirm Password" placeholder="Confirm Password" />
+            </div>
+          </div>
+
+          <div class="gender-details-box">
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+              <input type="radio" name="gender" id="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female">
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Register">
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="mainFooter">
+      <h3 class="subText">Hear From Our Town Crier</h3>
+      <p class="Subprimary">Subscribe to our newsletter to stay connected to our </br>
+        activities, get insights and updates on what's</br> happening in our community</p>
+
+      <form action="#" class="subForm">
+        <div class="sub-input-form">
+          <label for="fullname">Fullname:</label>
+          <input type="text" name="fullname" id="fullname" placeholder="John Smith" required>
+        </div>
+
+        <div class="sub-input-form">
+          <label for="email">Your Email:</label>
+          <input type="text" name="email" id="email" placeholder="Email Address" required>
+        </div>
+
+      </form>
+      <button class="btn btnFull">Subscribe</button>
+    </div>
+    <div class="container grid grid--footer">
+
+      <div class="logoCol">
+        <a href="index.html" class="footerLogo">
+          <img src="/img/cohorts/techimages.png" alt="omnifood-logo" class="logo">
+        </a>
+
+        <ul class="socialLinks">
+          <li><a href="#" class="footerLink">
+              <ion-icon name="logo-instagram" class="socialIcon"></ion-icon>
+            </a></li>
+          <li><a href="#" class="footerLink">
+              <ion-icon name="logo-facebook" class="socialIcon"></ion-icon>
+            </a></li>
+          <li><a href="#" class="footerLink">
+              <ion-icon name="logo-twitter" class="socialIcon"></ion-icon>
+            </a></li>
+        </ul>
+
+
+        <p class="copyRight">
+          copyright &copy; <span class="year">2027</span> by techArena.<br>inc. All rights reserved.
+
+        </p>
+      </div>
+      <div class="addressCol">
+        <p class="footerHeading">Contact Us</p>
+        <address class="contacts">
+          <p class="address">62 eje jesu St., 2nd lane, Ogun State, CA 94107</p>
+          <p><a href="tel:80-630-190-63" class="footerLink">80-630-190-63</a></p>
+          <p><a href="mailto:hello@techarens.com" class="footerLink">hello@techarena.com</a></p>
+        </address>
+
+      </div>
+      <nav class="navCol">
+        <p class="footerHeading">Amount</p>
+        <ul class="footerLinks">
+          <li><a href="#" class="footerLink">About TechArena</a></li>
+          <li><a href="#" class="footerLink">Sign in</a></li>
+          <li><a href="#" class="footerLink">iOS app</a></li>
+          <li><a href="#" class="footerLink">Andriod</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navCol">
+        <p class="footerHeading">Business</p>
+        <ul class="footerLinks">
+          <li><a href="#" class="footerLink">Carrier</a></li>
+          <li><a href="#" class="footerLink">Cooking partners</a></li>
+          <li><a href="#" class="footerLink">Recipe directory</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navCol">
+        <p class="footerHeading">Help Center</p>
+        <ul class="footerLinks">
+          <li><a href="#" class="footerLink">Privacy & terms</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script defer src="/javascript/script.js"></script> -->
+  <!-- <script src="script.js"></script> -->
+</body>
+<!----Swiper JS-->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

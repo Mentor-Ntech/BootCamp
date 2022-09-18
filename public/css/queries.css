@@ -1,0 +1,272 @@
+/********************
+/*BELOW 1344px (smaller desktop
+******************/
+
+
+@media (max-width: 84rem) {
+
+    .hero {
+        max-width: 120rem;
+    }
+
+   
+
+}
+
+/******************
+BELOW 1200px (Landscape Tablets)
+***************/
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+ 
+    .sectionContact{
+        padding: 5.6rem 0;
+    }
+    .containerKK {
+      padding: 10px;  
+        
+    }
+}
+
+/******************
+BELOW 944px (Landscape Tablets)
+***************/
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero{
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .headingPrimary{
+        text-align: center;
+    }
+
+    .heroDescription{
+        text-align: center;
+    }
+
+    .heroImage {
+        width: 60%;
+    }
+    
+    
+  .cta {
+    /* 3/5 = 60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+    .headerText{
+        font-size: 30px;
+    }
+
+    .aboutText {
+        font-size: 15px;
+    }
+
+    .stack-container {  
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+        grid-gap: 1rem;
+        align-items: center;
+    }
+
+    .sectionStack{
+        padding: 2.8rem 0 5.6rem 0;
+    }
+
+    .stack-container {
+        padding: 0 5px;
+
+    }
+    .box-img {
+        width: 170px;
+        height: 170px;
+        
+    }
+    
+    .box-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/******************
+BELOW 740px (small Tablets)
+***************/
+@media(max-width: 44em) {
+    .headingPrimary{
+        font-size: 4.8rem;
+    }
+
+    .sectionStack{
+        padding: 5rem 0;
+    }
+    .stack-container{
+        text-align: center;
+    }
+
+    .box {
+        margin-top: 2px;
+    }
+
+    .box-img{
+         width: 150px;
+        height: 150px;
+    }
+
+    .aboutBcontent{
+        grid-template-columns: 1fr;
+    }
+
+    section#contact .container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+    
+    .stack-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-bottom: 50rem;
+    }
+
+    .FAQ {
+        margin-top: 70rem;
+    }
+
+
+}
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 4.8rem;
+  }
+  
+  .no-flexbox-gap .list-item:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+  
+  .no-flexbox-gap .list-icon:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .delivered-faces {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .meal-attribute:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  
+  .no-flexbox-gap .meal-icon {
+    margin-right: 1.6rem;
+  }
+  
+  .no-flexbox-gap .footer-row div:not(:last-child) {
+    margin-right: 6.4rem;
+  }
+  
+  .no-flexbox-gap .social-links li:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+  
+  .no-flexbox-gap .footer-nav li:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  
+  @media (max-width: 75em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+  
+  @media (max-width: 59em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 4.8rem;
+    }
+  }
+  
